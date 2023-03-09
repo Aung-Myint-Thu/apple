@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'playfair display';
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+.key {
+    display: inline-flex;
+}
+ .key .frames {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+.key .name {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden; 
+}
+.name li {
+    color: firebrick;
+    list-style-type: none;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(3) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.name li span {
+    position: relative;
+}
+.name li span::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid firebrick;
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin : 0 -35px 0 35px;
+    }
+}

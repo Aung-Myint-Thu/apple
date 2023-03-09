@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apple.css">
+</head>
+<body>
+  <header>
+    <div class="apple container">
+        <a href="https://www.apple.com/" class="img">
+            <img src="img/Apple_logo_PNG1.png" alt="">
+        </a>
+        <nav class="nav">
+            <ul>
+                <button class="close">X</button>
+                <li><a href="https://www.apple.com/us/shop/goto/store">Store</a></li>
+                <li><a href="https://www.apple.com/mac/">Mac</a></li>
+                <li><a href="https://www.apple.com/ipad/">ipad</a></li>
+                <li><a href="https://www.apple.com/iphone/">iphone</a></li>
+                <li><a href="https://www.apple.com/watch/">watch</a></li>
+            </ul>
+            <h1>Hello</h1>
+        </nav>
+        <button class="toggle">T</button>
+    </div>
+  </header> 
+  <script>
+     document.querySelector('.toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        })
+        document.querySelector('.close').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        })
+  </script> 
+</body>
+</html>
